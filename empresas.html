@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Authentic Farma-Empresas</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo-app.ico" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- Fuente (Quicksand) desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Barra superior -->
+    <div class="top-bar" style="background-color: rgb(0, 0, 41)">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a
+          href="https://empresa.authenticfarma.com/login"
+          target="_blank"
+          class="ms-auto font-success portal-link-small fw-bold py-1"
+          >Ir al portal Empresas</a
+        >
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white pt-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <!-- Logo placeholder - agregar imagen aquí -->
+          <img
+            src="./assets/images/authentic_logo.png"
+            alt="Authentic Farma"
+            height="40"
+          />
+        </a>
+
+        <!-- Botón hamburguesa para móvil -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav w-100 justify-content-center align-items-center d-flex"
+          >
+            <li class="nav-item">
+              <a class="nav-link font-primary" href="empresas.html"
+                >Soy una empresa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-primary" href="mentores.html">Mentores</a>
+            </li>
+          </ul>
+          <!-- Botón de registro en móvil -->
+          <div class="d-flex d-lg-none justify-content-center mt-3">
+            <a
+              class="btn-custom-primary"
+              href="https://app.authenticfarma.com"
+              target="_blank"
+              >Regístrate</a
+            >
+          </div>
+        </div>
+        <!-- Botón de registro en desktop -->
+        <div class="d-none d-lg-flex">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="btn-custom-primary"
+                href="https://app.authenticfarma.com"
+                target="_blank"
+                >Regístrate</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="fw-bold font-primary-none mb-4">
+              Encuentra el mejor talento de la industria
+              <span class="font-success">farmacéutica</span> y
+              <span class="font-success">de la salud</span> en Latinoamérica
+            </h1>
+            <p class="lead text-muted mb-4 font-primary-none">
+              Sabemos que la preselección requiere tiempo. El sector tiene
+              especificidades con altos niveles de formación y experticia.
+              Conocemos que el tiempo amerita atraer rápidamente los talentos.
+              <br /><strong>¿Te identificas con algo de esto?</strong>
+            </p>
+
+            <!-- Estadísticas -->
+            <div class="row text-center g-4 mt-4">
+              <div class="col-md-4">
+                <div
+                  class="d-flex align-items-start gap-2 justify-content-center justify-content-lg-start"
+                >
+                  <i class="fa-solid fa-arrow-right font-success mt-1"></i>
+                  <div class="text-start">
+                    <div class="display-6 fw-bold font-success">+16K</div>
+                    <p class="text-muted font-primary-none">
+                      Candidatos registrados
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="d-flex align-items-start gap-2 justify-content-center justify-content-lg-start"
+                >
+                  <i class="fa-solid fa-arrow-right font-success mt-1"></i>
+                  <div class="text-start">
+                    <div class="display-6 fw-bold font-success">+25</div>
+                    <p class="text-muted font-primary-none">
+                      Empresas confían en nosotros
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="d-flex align-items-start gap-2 justify-content-center justify-content-lg-start"
+                >
+                  <i class="fa-solid fa-arrow-right font-success mt-1"></i>
+                  <div class="text-start">
+                    <div class="display-6 fw-bold font-success">+9</div>
+                    <p class="text-muted font-primary-none">
+                      Años apoyando la industria
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="card shadow-lg border-0">
+              <div class="card-body p-4">
+                <h3 class="font-primary-none fw-bold mb-4 text-center">
+                  En <span class="font-success">AuthenticFarma</span> te podemos
+                  ayudar
+                </h3>
+                <p class="text-muted mb-4 text-center font-primary-none">
+                  Nos gustaría agendar una reunión de 30 minutos para que
+                  conozcas nuestra plataforma.
+                </p>
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label font-primary-none"
+                        >Nombre *</label
+                      >
+                      <input type="text" class="form-control" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label font-primary-none"
+                        >Apellido *</label
+                      >
+                      <input type="text" class="form-control" required />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label font-primary-none"
+                        >Correo *</label
+                      >
+                      <input type="email" class="form-control" required />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label font-primary-none"
+                        >Empresa *</label
+                      >
+                      <input type="text" class="form-control" required />
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn-custom-success w-100">
+                        <i class="fa-solid fa-paper-plane me-2"></i>
+                        Enviar solicitud
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Información de contacto -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <h4 class="font-success text-uppercase fw-bold mb-3">
+                Contacto especializado
+              </h4>
+              <h3 class="font-primary-none fw-bold mb-4">
+                ¿Eres una empresa del sector farmacéutico, dispositivos médicos
+                o de la salud?
+              </h3>
+              <p class="text-muted mb-4 font-primary-none">
+                Contáctanos para acceder a los perfiles de potenciales
+                candidatos para tu compañía y optimizar tus procesos de
+                selección y reclutamiento en un
+                <span class="fw-bold font-success">55%</span>.
+              </p>
+
+              <div class="card border-0 shadow-sm p-4 mb-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div
+                    class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px"
+                  >
+                    <i class="fa-solid fa-user-tie"></i>
+                  </div>
+                  <div>
+                    <h5 class="font-primary-none fw-bold mb-2">
+                      Angélica Ma. Santos Rojas
+                    </h5>
+                    <p class="small text-muted mb-3 font-primary-none">
+                      Desarrollo Nuevos Negocios
+                    </p>
+
+                    <div class="mb-2 d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-envelope text-primary"></i>
+                      <a
+                        href="mailto:angelica.santos@authentic.com.co"
+                        class="text-decoration-none font-primary-none"
+                      >
+                        angelica.santos@authentic.com.co
+                      </a>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="fa-brands fa-whatsapp text-success"></i>
+                      <span class="font-primary-none">Cel/WhatsApp: </span>
+                      <a
+                        href="https://wa.me/573133320025"
+                        class="text-decoration-none font-primary-none"
+                        target="_blank"
+                      >
+                        +57 313 332 0025
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card border-0 shadow-lg">
+                <div class="card-body p-4">
+                  <h5 class="font-primary-none fw-bold mb-3 text-center">
+                    <i class="fa-solid fa-play-circle text-primary me-2"></i>
+                    Conoce nuestra plataforma
+                  </h5>
+                  <div class="ratio ratio-16x9">
+                    <div
+                      class="bg-light d-flex align-items-center justify-content-center rounded"
+                    >
+                      <div class="text-center">
+                        <i
+                          class="fa-solid fa-play text-primary"
+                          style="font-size: 3rem"
+                        ></i>
+                        <p class="text-muted mt-3 mb-0 font-primary-none">
+                          Video demostrativo de la plataforma
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Características -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="font-success mb-3 fw-bold">
+              ¡Ahorra un 55% de tiempo en tus procesos de selección!
+            </h2>
+            <h3 class="font-primary-none fw-bold mb-4">
+              Acceso a los mejores candidatos de acuerdo al perfil
+            </h3>
+            <p class="text-muted mb-5 font-primary-none">
+              La inteligencia artificial y el machine learning lo aplicamos para
+              que tengas los mejores candidatos de acuerdo a los requisitos de
+              la oferta y el perfil de los candidatos, con el fin de hacer el
+              match perfecto.
+            </p>
+          </div>
+
+          <div class="text-center mb-5">
+            <h4 class="font-success text-uppercase fw-bold mb-3">
+              ¿Por qué Authentic Farma?
+            </h4>
+            <h2 class="font-primary-none fw-bold">
+              Selecciona y recluta fácilmente
+            </h2>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <div class="text-center p-4">
+                <div
+                  class="d-flex align-items-center justify-content-center mb-4"
+                >
+                  <div
+                    class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 60px; height: 60px"
+                  >
+                    <i class="fa-solid fa-users fs-4"></i>
+                  </div>
+                </div>
+                <div
+                  class="d-flex align-items-start gap-2 justify-content-center"
+                >
+                  <i class="fa-solid fa-arrow-right font-success mt-1"></i>
+                  <div class="text-start">
+                    <h4 class="font-primary-none fw-bold mb-3">
+                      Base de candidatos especializada
+                    </h4>
+                    <h5 class="text-muted font-primary-none">
+                      Nuestros candidatos hacen parte de las industrias de la
+                      salud, farmacéutica, dispositivos médicos, dermo-cosmética
+                      entre otras afines, lo que hace que el proceso de
+                      selección sea más efectivo y alineado a las expectativas
+                      de los reclutadores.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="text-center p-4">
+                <div
+                  class="d-flex align-items-center justify-content-center mb-4"
+                >
+                  <div
+                    class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 60px; height: 60px"
+                  >
+                    <i class="fa-solid fa-cogs fs-4"></i>
+                  </div>
+                </div>
+                <div
+                  class="d-flex align-items-start gap-2 justify-content-center"
+                >
+                  <i class="fa-solid fa-arrow-right font-success mt-1"></i>
+                  <div class="text-start">
+                    <h4 class="font-primary-none fw-bold mb-3">
+                      Proceso de selección optimizado
+                    </h4>
+                    <h5 class="text-muted font-primary-none">
+                      Las empresas definen el perfil de los candidatos que
+                      buscan, usando las variables más relevantes para el cargo.
+                      Luego a través de procesos de inteligencia artificial
+                      seleccionamos a esos candidatos que mejor se ajusten a la
+                      oferta.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="text-center p-4">
+                <div
+                  class="d-flex align-items-center justify-content-center mb-4"
+                >
+                  <div
+                    class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 60px; height: 60px"
+                  >
+                    <i class="fa-solid fa-rocket fs-4"></i>
+                  </div>
+                </div>
+                <div
+                  class="d-flex align-items-start gap-2 justify-content-center"
+                >
+                  <i class="fa-solid fa-arrow-right font-success mt-1"></i>
+                  <div class="text-start">
+                    <h4 class="font-primary-none fw-bold mb-3">
+                      Contrata en tiempo récord
+                    </h4>
+                    <h5 class="text-muted font-primary-none">
+                      A través de una base de datos especializada y un proceso
+                      de selección optimizado, que aplica también en
+                      reclutamiento, tus vacantes se ocuparán más rápido y con
+                      el candidato ideal.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Final -->
+      <section class="py-5 bg-empresa">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="mb-3 font-primary-none fw-bold text-white">
+                ¿Listo para optimizar tus procesos de selección?
+              </h2>
+              <p class="text-white mb-4 font-primary-none text-white" >
+                Contáctanos hoy para ayudarte en tus procesos de selección y
+                reclutamiento. Descubre cómo podemos ahorrar un
+                <span class="fw-bold">55%</span> de tu tiempo.
+              </p>
+              <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a
+                  href="https://empresa.authenticfarma.com/login"
+                  target="_blank"
+                  class="btn-custom-success"
+                >
+                  </i>
+                  Ir al portal empresas
+                </a>
+                <!-- <a
+                  href="mailto:angelica.santos@authentic.com.co"
+                  class="btn btn-outline-light btn-lg"
+                >
+                  <i class="fa-solid fa-envelope me-2"></i>
+                  Quiero saber más
+                </a> -->
+              </div>
+
+              <div class="mt-4">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2 text-white"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                  <span
+                    >Email:
+                    <a
+                      class="text-white text-decoration-none"
+                      href="mailto:negocios@authentic.com.co"
+                    >
+                      negocios@authentic.com.co
+                    </a>
+                  </span>
+                  <span class="mx-3">|</span>
+                  <i class="fa-solid fa-phone"></i>
+                  <span
+                    >Tel.:
+                    <a
+                      class="text-white text-decoration-none"
+                      href="tel:+573334001541"
+                    >
+                      +57 333 400 1541
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-minimal py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Brand Column -->
+          <div class="col-lg-4 text-center text-lg-start">
+            <div class="mb-4">
+              <img
+                src="./assets/images/authentic_logo.png"
+                class="img-fluid"
+                width="180"
+                alt="Authentic Farma"
+              />
+            </div>
+            <p class="text-muted small mb-4">
+              Transformando el reclutamiento en la industria farmacéutica,
+              dispositivos médicos y dermocosméticos en Latinoamérica.
+            </p>
+            <div
+              class="footer-social d-flex justify-content-center justify-content-lg-start gap-3"
+            >
+              <a
+                href="https://www.linkedin.com/company/authenticfarma"
+                target="_blank"
+                class="footer-social-link text-decoration-none"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/authentic_farma/"
+                target="_blank"
+                class="footer-social-link text-decoration-none"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Navigation Column -->
+          <div class="col-lg-4 text-center">
+            <h5 class="font-primary-none fw-bold mb-4">Enlaces Rápidos</h5>
+            <div class="footer-nav d-flex flex-column gap-3">
+              <a href="index.html" class="footer-link">Inicio</a>
+              <a href="empresas.html" class="footer-link">Empresas</a>
+              <a href="mentores.html" class="footer-link">Mentores</a>
+              <a href="contacto.html" class="footer-link">Contacto</a>
+              <a
+                href="https://www.authenticfarma.com/blog/"
+                target="_blank"
+                class="footer-link"
+                >Blog</a
+              >
+              <a
+                href="https://www.authenticfarma.com/faq/"
+                target="_blank"
+                class="footer-link"
+                >FAQ</a
+              >
+            </div>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="col-lg-4 text-center text-lg-start">
+            <h5 class="font-primary-none fw-bold mb-4">Contacto</h5>
+            <div class="footer-contact d-flex flex-column gap-3">
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2"
+              >
+                <i class="fa-solid fa-envelope text-primary"></i>
+                <a
+                  href="mailto:negocios@authentic.com.co"
+                  class="footer-link text-decoration-none"
+                  >negocios@authentic.com.co</a
+                >
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2"
+              >
+                <i class="fa-solid fa-phone text-primary"></i>
+                <a
+                  href="tel:+573334001541"
+                  class="footer-link text-decoration-none"
+                  >+57 333 400 1541</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4 border-top border-2 opacity-10" />
+
+        <!-- Bottom Section -->
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="text-muted mb-0 small">
+              ©2025 Authentic Team S.A.S. Todos los derechos reservados
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+            <div
+              class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3"
+            >
+              <a
+                href="https://www.authenticfarma.com/privacidad/"
+                target="_blank"
+                class="footer-legal-link small"
+                >Aviso de Privacidad</a
+              >
+              <span class="text-muted small">•</span>
+              <a
+                href="https://www.authenticfarma.com/terminos_condiciones/"
+                target="_blank"
+                class="footer-legal-link small"
+                >Términos y Condiciones</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS + Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
