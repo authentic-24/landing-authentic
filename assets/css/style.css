@@ -395,3 +395,16 @@ body {
         margin-bottom: 1rem;
     }
 }
+
+/* ========== ANIMACIONES DE HEADER ========== */
+.hero .animate__animated {
+    opacity: 0;
+    animation-fill-mode: both;
+}
+
+.hero .animate__animated.animate__fadeInUp,
+.hero .animate__animated.animate__fadeInRight {
+    animation-duration: 1s;
+}
+
+
