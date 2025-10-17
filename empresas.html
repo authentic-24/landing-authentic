@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0" />
     <title>Authentic Farma-Empresas</title>
     <link rel="icon" type="image/x-icon" href="assets/images/logo-app.ico" />
     <!-- Bootstrap CSS -->
@@ -31,7 +31,7 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body class="empresas-page">
     <!-- Barra superior -->
     <div class="top-bar" style="background-color: rgb(0, 0, 41)">
       <div class="container d-flex justify-content-between align-items-center">
@@ -72,12 +72,19 @@
             class="navbar-nav w-100 justify-content-center align-items-center d-flex"
           >
             <li class="nav-item">
-              <a class="nav-link font-primary" href="empresas.html"
+              <a class="nav-link font-primary" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-success fw-bold border-bottom border-primary" href="empresas.html"
                 >Soy una empresa</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link font-primary" href="mentores.html">Mentores</a>
+              <a
+                class="nav-link font-primary"
+                href="mentores.html"
+                >Mentores</a
+              >
             </li>
           </ul>
           <!-- Botón de registro en móvil -->
@@ -106,16 +113,16 @@
       </div>
     </nav>
 
-    <header class="hero">
-      <div class="container">
+    <header class="hero" style="padding: 8rem 0; transform: scale(1); zoom: 1;">
+      <div class="container" style="max-width: 1200px;">
         <div class="row align-items-center">
           <div class="col-lg-6 text-center text-lg-start">
-            <h5 class="fw-bold font-primary-none mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+            <h2 class="fw-bold font-primary-none mb-4 animate__animated animate__fadeInUp animate__delay-1s" style="font-size: 3rem; line-height: 1.2; font-weight: 700 !important;">
               Encuentra el mejor talento de la industria
               <span class="font-success">farmacéutica</span> y
               <span class="font-success">de la salud</span> en Latinoamérica
-            </h5>
-            <p class="lead text-muted mb-4 font-primary-none animate__animated animate__fadeInUp animate__delay-2s">
+            </h2>
+            <p class="lead text-muted mb-4 font-primary-none animate__animated animate__fadeInUp animate__delay-2s" style="font-size: 1.4rem; line-height: 1.6; font-weight: 400;">
               Sabemos que la preselección requiere tiempo. El sector tiene
               especificidades con altos niveles de formación y experticia.
               Conocemos que el tiempo amerita atraer rápidamente los talentos.
@@ -130,8 +137,8 @@
                 >
                   
                   <div class="text-start">
-                    <div class="display-6 fw-bold font-success">+16K</div>
-                    <p class="text-muted font-primary-none">
+                    <div class="display-6 fw-bold font-success" style="font-size: 3rem !important;">+16K</div>
+                    <p class="text-muted font-primary-none" style="font-size: 1.1rem;">
                       Candidatos registrados
                     </p>
                   </div>
@@ -143,8 +150,8 @@
                 >
                   
                   <div class="text-start">
-                    <div class="display-6 fw-bold font-success">+25</div>
-                    <p class="text-muted font-primary-none">
+                    <div class="display-6 fw-bold font-success" style="font-size: 3rem !important;">+25</div>
+                    <p class="text-muted font-primary-none" style="font-size: 1.1rem;">
                       Empresas confían en nosotros
                     </p>
                   </div>
@@ -155,7 +162,7 @@
                   class="d-flex align-items-start gap-2 justify-content-center justify-content-lg-start"
                 >
                   <div class="text-start">
-                    <div class="display-6 fw-bold font-success">+9</div>
+                    <div class="display-6 fw-bold font-success" style="font-size: 3rem !important;">+9</div>
                     <p class="text-muted font-primary-none">
                       Años apoyando la industria
                     </p>
@@ -223,14 +230,14 @@
         <div class="container">
           <div class="row g-4">
             <div class="col-lg-6 animate__fadeInLeft">
-              <h5 class="font-success text-uppercase fw-bold mb-3">
+              <h4 class="font-success text-uppercase fw-bold mb-3" style="font-size: 1.1rem;">
                 Contacto especializado
-              </h5>
-              <h4 class="font-primary-none fw-bold mb-4">
+              </h4>
+              <h3 class="font-primary-none fw-bold mb-4" style="font-size: 2rem; line-height: 1.3;">
                 ¿Eres una empresa del sector farmacéutico, dispositivos médicos
                 o de la salud?
-              </h4>
-              <p class="text-muted mb-4 font-primary-none">
+              </h3>
+              <p class="text-muted mb-4 font-primary-none" style="font-size: 1.1rem; line-height: 1.6;">
                 Contáctanos para acceder a los perfiles de potenciales
                 candidatos para tu compañía y optimizar tus procesos de
                 selección y reclutamiento en un
@@ -326,12 +333,12 @@
           </div>
           <div class="row pt-4">
             <div class="text-center mb-5 animate__fadeInUp">
-              <h4 class="font-success text-uppercase fw-bold mb-3">
+              <h3 class="font-success text-uppercase fw-bold mb-3" style="font-size: 1.5rem;">
                 ¿Por qué Authentic Farma?
-              </h4>
-              <h5 class="font-primary-none fw-bold">
+              </h3>
+              <h2 class="font-primary-none fw-bold" style="font-size: 2.2rem; line-height: 1.3;">
                 Selecciona y recluta fácilmente
-              </h5>
+              </h2>
             </div>
           </div>
 
@@ -353,9 +360,9 @@
                 >
                   
                   <div class="text-start text-center">
-                    <h5 class="font-primary-none fw-bold mb-3">
+                    <h4 class="font-primary-none fw-bold mb-3" style="font-size: 1.3rem;">
                       Base de candidatos especializada
-                    </h5>
+                    </h4>
                     <p class="text-muted font-primary-none">
                       Nuestros candidatos hacen parte de las industrias de la
                       salud, farmacéutica, dispositivos médicos, dermo-cosmética
@@ -384,9 +391,9 @@
                 >
                   
                   <div class="text-center">
-                    <h5 class="font-primary-none fw-bold mb-3">
+                    <h4 class="font-primary-none fw-bold mb-3" style="font-size: 1.3rem;">
                       Proceso de selección optimizado
-                    </h5>
+                    </h4>
                     <p class="text-muted font-primary-none">
                       Las empresas definen el perfil de los candidatos que
                       buscan, usando las variables más relevantes para el cargo.
@@ -415,9 +422,9 @@
                 >
                   
                   <div class="text-center">
-                    <h5 class="font-primary-none fw-bold mb-3">
+                    <h4 class="font-primary-none fw-bold mb-3" style="font-size: 1.3rem;">
                       Contrata en tiempo récord
-                    </h5>
+                    </h4>
                     <p class="text-muted font-primary-none">
                       A través de una base de datos especializada y un proceso
                       de selección optimizado, que aplica también en

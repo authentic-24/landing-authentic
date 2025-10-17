@@ -82,6 +82,11 @@
             class="navbar-nav w-100 justify-content-center align-items-center d-flex"
           >
             <li class="nav-item">
+                <a class="nav-link font-success fw-bold border-bottom border-primary" href="index.html"
+                  >Inicio</a
+                >
+            </li>
+            <li class="nav-item">
               <a class="nav-link font-primary" href="empresas.html"
                 >Soy una empresa</a
               >
@@ -690,97 +695,123 @@
                 </p>
               </div>
               
-              <!-- FAQ Section -->
-              <div class="mt-5">
-                <div class="row g-4">
-                  <!-- Servicios -->
-                  <div class="col-lg-6 animate__fadeInLeft animate__delay-2s">
-                    <div class="card h-100 border-0 shadow-sm" style="background: #ffffff; border-radius: 16px; border-top: 4px solid #e787da;">
-                      <div class="card-header bg-transparent border-0 pt-4 pb-2">
-                        <h5 class="mb-0 font-primary-none fw-bold" style="color: #2c3e50;">Servicios</h5>
-                      </div>
-                      <div class="card-body px-4 pb-4">
-                        
-                        <div class="mb-4 pb-3" style="border-bottom: 1px solid #f0f0f0;">
-                          <h6 class="fw-bold mb-2 font-primary-none" style="color: #2c3e50;">
+              <!-- FAQ Accordion Section -->
+              <div class="mt-5 animate__fadeInUp animate__delay-2s">
+                <div class="row justify-content-center">
+                  <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                      
+                      <!-- Pregunta 1 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed fw-bold font-primary-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1"
+                                  style="background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%); border: none; padding: 1.5rem; font-size: 1.1rem; color: #2c3e50;">
                             ¿Qué es AuthenticFarma?
-                          </h6>
-                          <p class="text-muted mb-0" style="font-size: 0.9rem; line-height: 1.6;">
+                          </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body" style="padding: 1.5rem; background: #ffffff; color: #666; font-size: 1rem; line-height: 1.6;">
                             Authentic Farma es una comunidad profesional de la industria de la salud, farmacéutica y de equipos médicos en Colombia.
-                          </p>
+                          </div>
                         </div>
-                        
-                        <div class="mb-4 pb-3" style="border-bottom: 1px solid #f0f0f0;">
-                          <h6 class="fw-bold mb-2 font-primary-none" style="color: #2c3e50;">
+                      </div>
+
+                      <!-- Pregunta 2 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed fw-bold font-primary-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2"
+                                  style="background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%); border: none; padding: 1.5rem; font-size: 1.1rem; color: #2c3e50;">
                             ¿Qué logro con registrarme en AuthenticFarma?
-                          </h6>
-                          <p class="text-muted mb-0" style="font-size: 0.9rem; line-height: 1.6;">
+                          </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body" style="padding: 1.5rem; background: #ffffff; color: #666; font-size: 1rem; line-height: 1.6;">
                             Encontrará las ofertas de trabajo de los laboratorios farmacéuticos y la industria de equipos médicos y de salud. Ofertas de trabajo como visitador médico, gerente de producto y otras posiciones de media y alta gerencia en el área de ventas, mercadeo, operaciones, recursos humanos entre otras. No solo de la línea humana, también la industria veterinaria.
-                          </p>
+                          </div>
                         </div>
-                        
-                        <div class="mb-2">
-                          <h6 class="fw-bold mb-2 font-primary-none" style="color: #2c3e50;">
+                      </div>
+
+                      <!-- Pregunta 3 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed fw-bold font-primary-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3"
+                                  style="background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%); border: none; padding: 1.5rem; font-size: 1.1rem; color: #2c3e50;">
                             ¿Por qué es importante que mi currículo esté diligenciado al 100%?
-                          </h6>
-                          <p class="text-muted mb-0" style="font-size: 0.9rem; line-height: 1.6;">
+                          </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body" style="padding: 1.5rem; background: #ffffff; color: #666; font-size: 1rem; line-height: 1.6;">
                             Tu perfil es la primera impresión que tendrán las empresas y reclutadores sobre ti en la plataforma, por lo tanto, mientras más completo se encuentre serás más visible en las diferentes vacantes publicadas ya que la IA realiza la comparación con los requerimientos de la vacante con sus conocimientos y experiencia entre otros.
-                          </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  
-                  <!-- Cuenta -->
-                  <div class="col-lg-6 animate__fadeInRight animate__delay-3s">
-                    <div class="card h-100 border-0 shadow-sm" style="background: #ffffff; border-radius: 16px; border-top: 4px solid #007bff;">
-                      <div class="card-header bg-transparent border-0 pt-4 pb-2">
-                        <h5 class="mb-0 font-primary-none fw-bold" style="color: #2c3e50;">Cuenta</h5>
-                      </div>
-                      <div class="card-body px-4 pb-4">
-                        
-                        <div class="mb-4 pb-3" style="border-bottom: 1px solid #f0f0f0;">
-                          <h6 class="fw-bold mb-2 font-primary-none" style="color: #2c3e50;">
+
+                      <!-- Pregunta 4 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed fw-bold font-primary-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4"
+                                  style="background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%); border: none; padding: 1.5rem; font-size: 1.1rem; color: #2c3e50;">
                             ¿Cómo activar mi cuenta en AuthenticFarma?
-                          </h6>
-                          <p class="text-muted mb-0" style="font-size: 0.9rem; line-height: 1.6;">
+                          </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body" style="padding: 1.5rem; background: #ffffff; color: #666; font-size: 1rem; line-height: 1.6;">
                             Después de registrar su información personal le está llegando un correo al mail que registró, donde indica el proceso para activar la cuenta, la cual se debe hacer para poder ingresar. Si el correo no llega a su bandeja de entrada valide la opción de Spam.
-                          </p>
+                          </div>
                         </div>
-                        
-                        <div class="mb-4 pb-3" style="border-bottom: 1px solid #f0f0f0;">
-                          <h6 class="fw-bold mb-2 font-primary-none" style="color: #2c3e50;">
+                      </div>
+
+                      <!-- Pregunta 5 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed fw-bold font-primary-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5"
+                                  style="background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%); border: none; padding: 1.5rem; font-size: 1.1rem; color: #2c3e50;">
                             Olvidé mi contraseña. ¿Cómo puedo recuperar mi contraseña?
-                          </h6>
-                          <p class="text-muted mb-0" style="font-size: 0.9rem; line-height: 1.6;">
+                          </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body" style="padding: 1.5rem; background: #ffffff; color: #666; font-size: 1rem; line-height: 1.6;">
                             Si olvidó su contraseña, al iniciar da la opción de "olvido su contraseña" o puede usar 
                             <a href="https://app.authenticfarma.com/forgotPassword" target="_blank" 
-                               class="text-decoration-none fw-medium font-success"
-                               >
+                               class="text-decoration-none fw-medium"
+                               style="color: #0057b8;">
                               este enlace
                             </a>. 
                             Paso seguido le llegará un correo indicando el proceso para agregar una nueva contraseña.
-                          </p>
-                        </div>
-                        
-                        <div class="mb-4 pb-3" style="border-bottom: 1px solid #f0f0f0;">
-                          <h6 class="fw-bold mb-2 font-primary-none" style="color: #2c3e50;">
-                            Uso de cookies
-                          </h6>
-                          <p class="text-muted mb-0" style="font-size: 0.9rem; line-height: 1.6;">
-                            AuthenticFarma utiliza cookies para mejorar y personalizar su experiencia en nuestro sitio. Puede aceptar o rechazar cookies según su preferencia de navegador.
-                          </p>
-                        </div>
-                        
-                        <div class="mb-2">
-                          <h6 class="fw-bold mb-2 font-primary-none" style="color: #2c3e50;">
-                            Menores de Edad
-                          </h6>
-                          <p class="text-muted mb-0" style="font-size: 0.9rem; line-height: 1.6;">
-                            AuthenticFarma no recopila a sabiendas información de identificación personal de niños menores de edad. Si es menor de edad, debe pedir permiso a sus padres o tutores para utilizar este sitio web.
-                          </p>
+                          </div>
                         </div>
                       </div>
+
+                      <!-- Pregunta 6 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed fw-bold font-primary-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6"
+                                  style="background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%); border: none; padding: 1.5rem; font-size: 1.1rem; color: #2c3e50;">
+                            Uso de cookies
+                          </button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body" style="padding: 1.5rem; background: #ffffff; color: #666; font-size: 1rem; line-height: 1.6;">
+                            AuthenticFarma utiliza cookies para mejorar y personalizar su experiencia en nuestro sitio. Puede aceptar o rechazar cookies según su preferencia de navegador.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Pregunta 7 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed fw-bold font-primary-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7"
+                                  style="background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%); border: none; padding: 1.5rem; font-size: 1.1rem; color: #2c3e50;">
+                            Menores de Edad
+                          </button>
+                        </h2>
+                        <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body" style="padding: 1.5rem; background: #ffffff; color: #666; font-size: 1rem; line-height: 1.6;">
+                            AuthenticFarma no recopila a sabiendas información de identificación personal de niños menores de edad. Si es menor de edad, debe pedir permiso a sus padres o tutores para utilizar este sitio web.
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
