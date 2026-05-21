@@ -292,10 +292,10 @@ body {
 /* Ensure consistent scaling for all pages */
 html {
     font-size: 16px !important;
-    zoom: 1 !important;
+    /* zoom: 1 !important;
     -moz-transform: scale(1) !important;
     -webkit-transform: scale(1) !important;
-    transform: scale(1) !important;
+    transform: scale(1) !important; */
 }
 
 /* Specific fixes for empresas page */

@@ -12,12 +12,11 @@
       crossorigin="anonymous"
     />
     <!-- Fuente (Quicksand) desde Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+   
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -30,17 +29,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+
+
+
+   
   </head>
   <body>
-    <!-- Loader Animation -->
-    <!-- <div class="loader-overlay">
-      <div class="loader-logo">
-        <img
-          src="./assets/images/logo_loader.gif"
-          alt="Cargando Authentic Farma..."
-        />
-      </div>
-    </div> -->
+    <elevenlabs-convai agent-id="agent_6301kj085qt6etava1kspdcc0pvx"></elevenlabs-convai>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 
     <!-- Barra superior -->
     <div class="top-bar" style="background-color: rgb(0, 0, 41)">
@@ -100,14 +97,17 @@
             <li class="nav-item">
               <a class="nav-link font-primary" href="https://innovapharma.authenticfarma.com/" target="_blank">E-learning</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link font-primary" href="https://innovapharma4.authenticfarma.com/" target="_blank">Innovapharma</a>
+            </li>
           </ul>
           <!-- Botón de registro en móvil -->
           <div class="d-flex d-lg-none justify-content-center mt-3">
             <a
               class="btn-custom-primary"
-              href="https://app.authenticfarma.com"
+              href="https://candidatos.authenticfarma.com/login"
               target="_blank"
-              >Regístrate</a
+              >Candidatos</a
             >
           </div>
         </div>
@@ -117,9 +117,9 @@
             <li class="nav-item">
               <a
                 class="btn-custom-primary"
-                href="https://app.authenticfarma.com"
+                href="  https://candidatos.authenticfarma.com/login"
                 target="_blank"
-                >Regístrate</a
+                >Candidatos</a
               >
             </li>
           </ul>
@@ -128,7 +128,7 @@
     </nav>
 
     <!-- Hero Carousel -->
-  <div id="heroCarousel" class="carousel slide hero-fullscreen">
+    <div id="heroCarousel" class="carousel slide hero-fullscreen">
       <!-- Indicadores del carrusel -->
       <!-- <div class="carousel-indicators">
         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -154,7 +154,7 @@
                   transforma desde tu rol, el futuro de la salud con nosotros.
                 </p>
                 <div class="d-flex justify-content-center gap-3 mb-4 pt-3 animate__animated animate__fadeInUp animate__delay-3s">
-                  <a class="btn-custom-success btn-lg px-5 py-3" href="https://app.authenticfarma.com" target="_blank">
+                  <a class="btn-custom-success btn-lg px-5 py-3" href="https://candidatos.authenticfarma.com/register" target="_blank">
                     Regístrate Ahora
                   </a>
                 </div>
@@ -163,34 +163,6 @@
           </div>
         </div>
 
-        <!-- Slide 2 - Noticia 1 -->
-        <!-- <div class="carousel-item hero-slide" style="background-image: url('./assets/images/noticias/noti_1.jpg');">
-          <div class="hero-overlay"></div>
-          <div class="container h-100">
-            <div class="row align-items-center justify-content-center text-center h-100">
-              <div class="col-lg-8">
-               
-                <h2 class="fw-bold text-white mb-4 animate__animated animate__fadeInUp animate__delay-1s">
-                  <span class="font-success">Authentic Farma</span>
-                  en Latin Pharma B2B 2025:
-                  Conectando Innovación y Oportunidades en el Sector
-                  Farmacéutico y Dispositivos Médicos
-                </h2>
-                <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-2s">
-                  El pasado 8 y 9 de octubre de 2025, Authentic Farma participó activamente en Latin
-                  Pharma B2B 2025, la plataforma de networking farmacéutico más estratégica de
-                  Latinoamérica, realizada en la ciudad de Bogotá, Colombia.
-                </p>
-                <div class="d-flex justify-content-center gap-3 mb-4 pt-3 animate__animated animate__fadeInUp animate__delay-3s">
-                  <a class="btn-custom-success btn-lg px-4 py-3" href="noticias.html" target="_blank">
-                    Leer Más
-                  </a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
    
 
@@ -313,6 +285,15 @@
                   <img
                     src="./assets/images/clientes/log-eurofarma.png"
                     alt="Eurofarma"
+                    class="logo-img"
+                  />
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="logo-box-carousel">
+                  <img
+                    src="./assets/images/clientes/logo-pfizer.png"
+                    alt="Pfizer"
                     class="logo-img"
                   />
                 </div>
@@ -994,23 +975,12 @@
       crossorigin="anonymous"
     ></script>
     
-    <!-- Animate.css JavaScript -->
+
+
+    
     <script src="assets/js/script.js"></script>
-    <!-- <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var myCarousel = document.querySelector('#heroCarousel');
-        if (myCarousel && typeof bootstrap !== 'undefined' && bootstrap.Carousel) {
-          var carousel = bootstrap.Carousel.getInstance(myCarousel);
-          if (!carousel) {
-            carousel = new bootstrap.Carousel(myCarousel, {
-              interval: 10000,
-              ride: 'carousel',
-              pause: false,
-              wrap: true
-            });
-          }
-        }
-      });
-    </script> -->
+  
+    
   </body>
 </html>
+
