@@ -1004,33 +1004,26 @@
             '<span class="spinner-border spinner-border-sm me-2"></span>Enviando...';
           feedback.style.display = "none";
 
-          const data = new URLSearchParams();
-          data.append(
+          const params = new URLSearchParams();
+          params.append(
             "Nombre",
             document.getElementById("f-nombre").value.trim(),
           );
-          data.append(
+          params.append(
             "Apellido",
             document.getElementById("f-apellido").value.trim(),
           );
-          data.append(
+          params.append(
             "Correo",
             document.getElementById("f-correo").value.trim(),
           );
-          data.append(
+          params.append(
             "Empresa",
             document.getElementById("f-empresa").value.trim(),
           );
 
-          // mode: 'no-cors' es necesario con Google Apps Script porque sus
-          // respuestas POST pasan por una redirección que no incluye headers CORS.
-          // El dato llega correctamente a la hoja aunque la respuesta sea opaca.
-          fetch(SCRIPT_URL, {
-            method: "POST",
-            body: data,
-            mode: "no-cors",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          })
+          // GET evita el preflight CORS y el 403 de Google Apps Script en Workspace
+          fetch(SCRIPT_URL + "?" + params.toString(), { mode: "no-cors" })
             .then(function () {
               showFeedback(
                 true,
