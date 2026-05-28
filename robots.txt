@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquear archivos innecesarios para indexar
+Disallow: /assets/css/
+Disallow: /assets/js/
+
+# Sitemap
+Sitemap: https://www.authenticfarma.com/sitemap.xml
