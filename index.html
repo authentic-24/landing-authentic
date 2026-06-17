@@ -95,8 +95,102 @@
   </head>
   <body>
     <!-- <elevenlabs-convai agent-id="agent_6301kj085qt6etava1kspdcc0pvx"></elevenlabs-convai> -->
-    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+    <!-- <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<a href="https://wa.me/573183588344?text=Hola%20Anyi,%20quiero%20más%20información"
+   target="_blank"
+   class="whatsapp-widget">
+
+    <div class="whatsapp-content">
+        <small>¿Necesitas ayuda?</small>
+        <span>Habla con Angie</span>
+    </div>
+
+    <div class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+</a>
+
+<style>
+.whatsapp-widget{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#fff;
+    padding:12px 16px;
+    border-radius:60px;
+    text-decoration:none;
+    box-shadow:0 8px 30px rgba(0,0,0,.15);
+    z-index:9999;
+    transition:.3s;
+    animation:float 2s ease-in-out infinite;
+}
+
+.whatsapp-widget:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 12px 35px rgba(0,0,0,.2);
+}
+
+.whatsapp-content{
+    display:flex;
+    flex-direction:column;
+    line-height:1.2;
+}
+
+.whatsapp-content small{
+    color:#777;
+    font-size:11px;
+}
+
+.whatsapp-content span{
+    color:#222;
+    font-size:15px;
+    font-weight:700;
+}
+
+.whatsapp-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:30px;
+    box-shadow:0 4px 15px rgba(37,211,102,.4);
+}
+
+@keyframes float{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-5px); }
+}
+
+@media(max-width:768px){
+    .whatsapp-content{
+        display:none;
+    }
+
+    .whatsapp-widget{
+        padding:0;
+        background:transparent;
+        box-shadow:none;
+    }
+
+    .whatsapp-icon{
+        width:65px;
+        height:65px;
+        font-size:34px;
+    }
+}
+</style>
     <!-- Barra superior -->
     <div class="top-bar" style="background-color: rgb(0, 0, 41)">
       <div class="container d-flex justify-content-between align-items-center">
